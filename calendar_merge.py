@@ -17,7 +17,7 @@ end_date=datetime.combine(end_date,datetime.max.time())
 #Initializing master calendar
 cal = Calendar()
 cwd = os.getcwd()
-location = cwd + "/Experiments/"
+location = cwd + "Experiments//"
 
 #Canvas file
 target_url = ""
