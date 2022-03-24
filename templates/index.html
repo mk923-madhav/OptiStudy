@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>OptiStudy</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
-<body>
-   <h1>Welcome to OptiStudy!</h1>
-
-   <form action="/submit" method="post" role="form">
-        <p>What is the scheduler starting date? (in DD/MM/YYYY)?
-            <input id="startDate" name="startDate" placeholder="" value="" />
-            <br>
-            <br>
-        </p>
-        <p>What is the scheduler ending date? (in DD/MM/YYYY) 
-            <input id="endDate" name="endDate" placeholder="" value="" />
-            <br>
-            <br>
-        </p>
-        <p>Enter your Canvas URL:
-            <input id="canvasURL" name="canvasURL" placeholder="" value="" />
-            <br>
-            <br>
-        </p>
-        <p>Click on the "Choose File" button to upload your course scheduler file:
-            <input type="file" id="schedulerFile" placeholder="Course scheduler" name="filename">
-            <br>
-            <br>
-            </p>
-        <input type="submit">
+<body class="body-div">
+    <div class="center-div">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <form action="/submit" enctype=multipart/form-data method="post" role="form">
+                <h2 class="center">What is the scheduler starting date (in DD/MM/YYYY)?
+                    <input class ="button-23" id="startDate" name="startDate" placeholder="" value="" />
+                    <br>
+                    <br>
+                </h2>
+                <h2 class="center">What is the scheduler ending date (in DD/MM/YYYY)?  
+                    <input class ="center button-23" id="endDate" name="endDate" placeholder="" value="" />
+                    <br>
+                    <br>
+                </h2>
+                <h2 class="center">Please enter your Canvas URL:
+                    <input class ="button-23" id="canvasURL" name="canvasURL" placeholder="" value="" />
+                    <br>
+                    <br>
+                </h2>
+                <h2 class="center">Please upload your course scheduler file:
+                    <input class ="button-23" type="file" id="schedulerFile" placeholder="Course scheduler" name="file">
+                    <br>
+                    <br>
+                </h2>
+                <h2 class="center">
+                    <input class ="button-23" type="submit">
+                </h2> 
+        </form>
     </div>
-</form>
-
-</body>
+    </body>
 </html>

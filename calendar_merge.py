@@ -7,7 +7,7 @@ import recurring_ical_events
 from flask import Flask, render_template, request, json, session, redirect, url_for
 import os
 
-def create_calendar():
+def create_calendar(location):
     #Set date markers
     start_date=str(request.form['startDate'])
     start_date=datetime.strptime(start_date,"%d/%m/%Y").date()
@@ -18,9 +18,6 @@ def create_calendar():
 
     #Initializing master calendar
     cal = Calendar()
-    cwd = os.getcwd()
-    location = os.path.join(cwd, "Experiments/", datetime.now().strftime("%m.%d.%Y,%H.%M.%S"))
-    os.mkdir (location)
     location = location + "/"
     
     #Canvas file
