@@ -12,4 +12,4 @@ How to use this script -
 1. Create a new folder under 'Experiments' for the individual whose calendar you are creating
 2. Update the folder name accordingly in the variable 'location' (line 20) - make sure there is a '/' after the folder
 3. Add the Canvas URL to 'target_url' (line 23)
-4. Execute the script
+4. Execute the script 'old_calendar_merge.py'
