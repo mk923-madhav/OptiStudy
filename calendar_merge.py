@@ -19,6 +19,7 @@ def create_calendar(location):
     #Initializing master calendar
     cal = Calendar()
     location = location + "/"
+    display_events = []
     
     #Canvas file
     target_url = str(request.form['canvasURL'])
@@ -32,6 +33,12 @@ def create_calendar(location):
         for event in events:
             if ('assignment' in event['uid']):
                 cal.add_component(event)
+                display_event = {
+                    'todo' : event["SUMMARY"],
+                    'start' :(event["DTSTART"].dt-timedelta (hours=4)).replace(tzinfo=None),
+                    'end' : (event["DTEND"].dt-timedelta (hours=4)).replace(tzinfo=None)
+                }
+                display_events.append (display_event)
                 schedulewriter.writerow([event["SUMMARY"].replace (",",""), "To-do", (event["DTSTART"].dt-timedelta (hours=4)).replace(tzinfo=None), (event["DTEND"].dt-timedelta (hours=4)).replace(tzinfo=None)])
     canvas_file.close()
 
@@ -43,9 +50,17 @@ def create_calendar(location):
         events = recurring_ical_events.of(calendar).between(start_date, end_date)
         for event in events:
             cal.add_component(event)
+            display_event = {
+                'todo' : event["SUMMARY"],
+                'start' :event["DTSTART"].dt,
+                'end' : event["DTEND"].dt
+            }
+            display_events.append (display_event)
             schedulewriter.writerow([event["SUMMARY"].replace (",",""), "Class", event["DTSTART"].dt, event["DTEND"].dt, event["DTEND"].dt - event["DTSTART"].dt])
     scheduler_file.close()
 
     f = open(location+'optistudy_calendar.ics', 'wb')
     f.write(cal.to_ical())
     f.close()
+
+    return display_events
