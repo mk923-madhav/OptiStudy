@@ -8,12 +8,20 @@ import recurring_ical_events
 from flask import Flask, render_template, request, json, session, redirect, url_for
 import os
 
-def create_calendar(location, start_date, end_date):
+def create_calendar(location):
+     #Set date markers
+    start_date=str(request.form['startDate'])
+    start_date=datetime.strptime(start_date,"%d/%m/%Y").date()
+    start_date=datetime.combine(start_date,datetime.min.time()) 
+    end_date=str(request.form['endDate']) 
+    end_date=datetime.strptime(end_date,"%d/%m/%Y").date() 
+    end_date=datetime.combine(end_date,datetime.max.time())
+
     #Initializing master calendar
     cal = Calendar()
     location = location + "/"
     display_events = []
-    
+
     #Canvas file
     target_url = str(request.form['canvasURL'])
     print (target_url)
@@ -43,7 +51,6 @@ def create_calendar(location, start_date, end_date):
         events = recurring_ical_events.of(calendar).between(start_date, end_date)
         for event in events:
             cal.add_component(event)
-<<<<<<< HEAD
             display_event = {
                 'todo' : event["SUMMARY"],
                 'start' :event["DTSTART"].dt,
@@ -51,42 +58,10 @@ def create_calendar(location, start_date, end_date):
             }
             display_events.append (display_event)
             schedulewriter.writerow([event["SUMMARY"].replace (",",""), "Class", event["DTSTART"].dt, event["DTEND"].dt, event["DTEND"].dt - event["DTSTART"].dt])
-=======
-            schedulewriter.writerow([event["SUMMARY"].replace (",",""), "Class", event["DTSTART"].dt, (event["DTEND"].dt-timedelta (hours=4)).replace(tzinfo=None), event["DTEND"].dt - event["DTSTART"].dt])
->>>>>>> 44f6bcff438cafdf51be3670a7d825b8092517d1
     scheduler_file.close()
 
     f = open(location+'optistudy_calendar.ics', 'wb')
     f.write(cal.to_ical())
     f.close()
 
-<<<<<<< HEAD
     return display_events
-=======
-def fetch_data(location, start_date, end_date):
-    location = location + "/"
-    scheduler_file = open (location+"optistudy_calendar.ics",'rb')
-    calendar = Calendar.from_ical(scheduler_file.read())
-    events = recurring_ical_events.of(calendar).between(start_date, end_date)
-    counter=1
-    events_list=[]
-    for event in events:
-        dict = {}
-        dict['id'] = counter
-        counter=counter+1
-        dict['title'] = event["SUMMARY"]
-        dict['url'] = ""
-        if ('assignment' in event['uid']):
-            dict['class'] = 'assignment'
-        else:
-            dict['class'] = 'lecture'
-        if ('assignment' in event['uid']):
-            dict['start'] = event["DTSTART"].dt.replace(tzinfo=timezone.utc).timestamp()*1000
-            dict['end'] = (event["DTEND"].dt.replace(tzinfo=timezone.utc)+timedelta (minutes=30)).timestamp()*1000
-        else:
-            dict['start'] = (event["DTSTART"].dt.replace(tzinfo=timezone.utc)+timedelta (hours=4)).timestamp()*1000
-            dict['end'] = (event["DTEND"].dt.replace(tzinfo=timezone.utc)+timedelta (hours=4)).timestamp()*1000
-        events_list.append (dict)
-    print (events_list)
-    return events_list
->>>>>>> 44f6bcff438cafdf51be3670a7d825b8092517d1
