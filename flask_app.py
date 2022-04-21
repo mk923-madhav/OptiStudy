@@ -22,7 +22,7 @@ def show_calendar():
 
 @app.route("/download", methods=['GET'])
 def download_file():
-    return send_from_directory(app.config["UPLOAD_FOLDER"], 'optistudy_calendar.ics')
+    return send_from_directory(app.config["UPLOAD_FOLDER"], 'optistudy_calendar.ics', )
 
 # @app.route("/calendar", methods=['GET', 'POST'])
 # def calendar():
