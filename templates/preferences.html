@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OptiStudy</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body class="body-div">
+    
+    <div class="center-div">
+        <br><br>
+        <img class="center" src="../static/images/logo.png" width="500"> 
+        <br>
+        <form action="/calendar" enctype=multipart/form-data method="post" role="form">
+             <h2>Help us get to know you better!
+                 <br>
+                </h2>
+
+                <div class="form-group">
+                    <label style="color: black;" for="exampleInputEmail1" class="form-label mt-4">How much time (in hours) do you spend studying per week?</label>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio1" id="btnradio1" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio1"> < 20  </label>
+                        <input type="radio" class="btn-check" name="btnradio2" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">21-30</label>
+                        <input type="radio" class="btn-check" name="btnradio3" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">31-40</label>
+                        <input type="radio" class="btn-check" name="btnradio4" id="btnradio4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio4">41-50</label>
+                        <input type="radio" class="btn-check" name="btnradio5" id="btnradio5" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio5">51-60</label>
+                        <input type="radio" class="btn-check" name="btnradio6" id="btnradio16" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio6">> 60  </label>
+                      </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="color: black;" for="exampleInputEmail1" class="form-label mt-4">How long (in hours) do you concentrate on one subject?</label>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio7" id="btnradio7" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio7"> 0.5 </label>
+                        <input type="radio" class="btn-check" name="btnradio8" id="btnradio8" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio8"> 1 </label>
+                        <input type="radio" class="btn-check" name="btnradio9" id="btnradio9" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio9"> 1.5 </label>
+                        <input type="radio" class="btn-check" name="btnradio10" id="btnradio10" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio10">2</label>
+                        <input type="radio" class="btn-check" name="btnradio11" id="btnradio11" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio11">2.5</label>
+                        <input type="radio" class="btn-check" name="btnradio12" id="btnradio12" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio12">> 3 </label>
+                      </div>
+                </div>
+                    
+                <div class="form-group">
+                    <label style="color: black;" for="exampleInputEmail1" class="form-label mt-4">When do you study?</label>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Mon</th>
+                            <th scope="col">Tue</th>
+                            <th scope="col">Wed</th>
+                            <th scope="col">Thu</th>
+                            <th scope="col">Fri</th>
+                            <th scope="col">Sat</th>
+                            <th scope="col">Sun</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Morning</th>                        
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"></div></td>
+                            <td><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"></div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Afternoon</th>                        
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"></div></td>
+                            <td><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"></div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Evening</th>                        
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch">  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked=""></div></td>
+                            <td><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"></div></td>
+                            <td><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"></div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <br>
+                <div class="form-group">
+                <button type="submit" style="display: block; margin-left: auto; margin-right: auto; background-color: #2C3E50; border-color: #2C3E50;" class="btn btn-primary">Submit</button>
+                </div>
+        </form>
+    </div>
+    </body>
+</html>
