@@ -176,3 +176,16 @@ h4 {
   margin-left: 0;
   margin-right: 0;
 }
+
+.hover_img { 
+  display: inline-block;
+  align-items: right;
+ }
+.hover_img a { 
+  position:relative;
+  display: block;
+  margin-left: 0; 
+  margin-right: 0;
+}
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block; }
