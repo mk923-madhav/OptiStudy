@@ -1,0 +1,237 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Application 5 Group DM: Survival Exercise [NBAY6630]
+DTSTART;VALUE=DATE-TIME:20220427T133000Z
+DTEND;VALUE=DATE-TIME:20220427T133000Z
+DTSTAMP:20220303T203200Z
+UID:event-assignment-359461
+SEQUENCE:0
+CLASS:PUBLIC
+DESCRIPTION:[Application 5 Group DM.doc] (https://canvas.cornell.edu/cours
+ es/35321/files/5483257?wrap=1) \n\n \n\n[Application 5 Group DM Grading 
+ Sheet-1.doc] (https://canvas.cornell.edu/courses/35321/files/5485089?wrap=
+ 1)  
+URL:https://canvas.cornell.edu/calendar?include_contexts=course_35321&mont
+ h=04&year=2022#assignment_359461
+X-ALT-DESC;FMTTYPE=text/html:<p><a class="instructure_file_link instructur
+ e_scribd_file auto_open" title="Application 5 Group DM.doc" href="https://
+ canvas.cornell.edu/courses/35321/files/5483257?wrap=1" target="_blank" dat
+ a-canvas-previewable="false" data-api-endpoint="https://canvas.cornell.edu
+ /api/v1/courses/35321/files/5483257" data-api-returntype="File">Applicatio
+ n 5 Group DM.doc</a>&nbsp\;</p>\n<p>&nbsp\;</p>\n<p><a class="instructure_
+ file_link instructure_scribd_file auto_open" title="Application 5 Group DM
+  Grading Sheet-1.doc" href="https://canvas.cornell.edu/courses/35321/files
+ /5485089?wrap=1" target="_blank" data-canvas-previewable="false" data-api-
+ endpoint="https://canvas.cornell.edu/api/v1/courses/35321/files/5485089" d
+ ata-api-returntype="File">Application 5 Group DM Grading Sheet-1.doc</a> &
+ nbsp\;</p>
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2022 NBAY 6570 Assignment #4 [NBAY6570]
+DTSTART;VALUE=DATE-TIME:20220427T170000Z
+DTEND;VALUE=DATE-TIME:20220427T170000Z
+DTSTAMP:20220414T011300Z
+UID:event-assignment-368986
+SEQUENCE:0
+CLASS:PUBLIC
+DESCRIPTION:[simple model with Hardware.xlsx] (https://canvas.cornell.edu/
+ courses/35418/files/5748524?wrap=1)\n\n[simple model without hardware.xlsx
+ ] (https://canvas.cornell.edu/courses/35418/files/5748528?wrap=1)  
+URL:https://canvas.cornell.edu/calendar?include_contexts=course_35418&mont
+ h=04&year=2022#assignment_368986
+X-ALT-DESC;FMTTYPE=text/html:<p><a class="instructure_file_link instructur
+ e_scribd_file inline_disabled" title="simple model with Hardware.xlsx" hre
+ f="https://canvas.cornell.edu/courses/35418/files/5748524?wrap=1" target="
+ _blank" data-canvas-previewable="false" data-api-endpoint="https://canvas.
+ cornell.edu/api/v1/courses/35418/files/5748524" data-api-returntype="File"
+ >simple model with Hardware.xlsx</a></p>\n<p><a class="instructure_file_li
+ nk instructure_scribd_file inline_disabled" title="simple model without ha
+ rdware.xlsx" href="https://canvas.cornell.edu/courses/35418/files/5748528?
+ wrap=1" target="_blank" data-canvas-previewable="false" data-api-endpoint=
+ "https://canvas.cornell.edu/api/v1/courses/35418/files/5748528" data-api-r
+ eturntype="File">simple model without hardware.xlsx</a> &nbsp\;</p>
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Application 6 Learning from Experience [NBAY6630]
+DTSTART;VALUE=DATE-TIME:20220504T133000Z
+DTEND;VALUE=DATE-TIME:20220504T133000Z
+DTSTAMP:20220304T183800Z
+UID:event-assignment-359464
+SEQUENCE:0
+CLASS:PUBLIC
+DESCRIPTION:[ Application 6 Learning.doc] (https://canvas.cornell.edu/cour
+ ses/35321/files/5483295?wrap=1) \n\n \n\n[Application 6 Learning Grading
+  Sheet-2.doc] (https://canvas.cornell.edu/courses/35321/files/5485098?wrap
+ =1) \n\n \n\n 
+URL:https://canvas.cornell.edu/calendar?include_contexts=course_35321&mont
+ h=05&year=2022#assignment_359464
+X-ALT-DESC;FMTTYPE=text/html:<p><a class="instructure_file_link instructur
+ e_scribd_file auto_open" title="Application 6 Learning.doc" href="https://
+ canvas.cornell.edu/courses/35321/files/5483295?wrap=1" target="_blank" dat
+ a-canvas-previewable="false" data-api-endpoint="https://canvas.cornell.edu
+ /api/v1/courses/35321/files/5483295" data-api-returntype="File"> Applicati
+ on 6 Learning.doc</a>&nbsp\;</p>\n<p>&nbsp\;</p>\n<p><a class="instructure
+ _file_link instructure_scribd_file auto_open" title="Application 6 Learnin
+ g Grading Sheet-2.doc" href="https://canvas.cornell.edu/courses/35321/file
+ s/5485098?wrap=1" target="_blank" data-canvas-previewable="false" data-api
+ -endpoint="https://canvas.cornell.edu/api/v1/courses/35321/files/5485098" 
+ data-api-returntype="File">Application 6 Learning Grading Sheet-2.doc</a>&
+ nbsp\;</p>\n<p>&nbsp\;</p>\n<p>&nbsp\;</p>
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final Project  [NBAY6570]
+DTSTART;VALUE=DATE-TIME:20220504T000000
+DTEND;VALUE=DATE-TIME:20220504T000000
+DTSTAMP:20220421T152400Z
+UID:event-assignment-370965
+SEQUENCE:0
+CLASS:PUBLIC
+DESCRIPTION:[2022 NBAY 6570 Project Template.docx] (https://canvas.cornell
+ .edu/courses/35418/files/5800947?wrap=1)\n\nNOTE: The simple model files a
+ re the same as in Assignment #4  
+URL:https://canvas.cornell.edu/calendar?include_contexts=course_35418&mont
+ h=05&year=2022#assignment_370965
+X-ALT-DESC;FMTTYPE=text/html:<p><a class="instructure_file_link instructur
+ e_scribd_file inline_disabled" title="2022 NBAY 6570 Project Template.docx
+ " href="https://canvas.cornell.edu/courses/35418/files/5800947?wrap=1" tar
+ get="_blank" data-canvas-previewable="false" data-api-endpoint="https://ca
+ nvas.cornell.edu/api/v1/courses/35418/files/5800947" data-api-returntype="
+ File">2022 NBAY 6570 Project Template.docx</a></p>\n<p>NOTE: The simple mo
+ del files are the same as in Assignment #4 &nbsp\;</p>
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6570\, Lecture
+DTSTART;VALUE=DATE-TIME:20220427T130000
+DTEND;VALUE=DATE-TIME:20220427T141500
+DTSTAMP:20220427T234338Z
+UID:SP22366811.1NBAY-6570-LEC-0011@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6570\, Lecture
+DTSTART;VALUE=DATE-TIME:20220504T130000
+DTEND;VALUE=DATE-TIME:20220504T141500
+DTSTAMP:20220427T234338Z
+UID:SP22366811.1NBAY-6570-LEC-0011@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6570\, Lecture
+DTSTART;VALUE=DATE-TIME:20220427T144500
+DTEND;VALUE=DATE-TIME:20220427T160000
+DTSTAMP:20220427T234338Z
+UID:SP22366811.1NBAY-6570-LEC-0012@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+RELATED-TO:SP22366811.1NBAY-6570-LEC-0011@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6570\, Lecture
+DTSTART;VALUE=DATE-TIME:20220504T144500
+DTEND;VALUE=DATE-TIME:20220504T160000
+DTSTAMP:20220427T234338Z
+UID:SP22366811.1NBAY-6570-LEC-0012@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+RELATED-TO:SP22366811.1NBAY-6570-LEC-0011@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6630\, Lecture
+DTSTART;VALUE=DATE-TIME:20220427T094000
+DTEND;VALUE=DATE-TIME:20220427T105500
+DTSTAMP:20220427T234338Z
+UID:SP22367148.1NBAY-6630-LEC-0011@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6630\, Lecture
+DTSTART;VALUE=DATE-TIME:20220504T094000
+DTEND;VALUE=DATE-TIME:20220504T105500
+DTSTAMP:20220427T234338Z
+UID:SP22367148.1NBAY-6630-LEC-0011@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6630\, Lecture
+DTSTART;VALUE=DATE-TIME:20220427T112500
+DTEND;VALUE=DATE-TIME:20220427T124000
+DTSTAMP:20220427T234338Z
+UID:SP22367148.1NBAY-6630-LEC-0012@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+RELATED-TO:SP22367148.1NBAY-6630-LEC-0011@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6630\, Lecture
+DTSTART;VALUE=DATE-TIME:20220504T112500
+DTEND;VALUE=DATE-TIME:20220504T124000
+DTSTAMP:20220427T234338Z
+UID:SP22367148.1NBAY-6630-LEC-0012@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+RELATED-TO:SP22367148.1NBAY-6630-LEC-0011@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6750\, Lecture
+DTSTART;VALUE=DATE-TIME:20220503T094000
+DTEND;VALUE=DATE-TIME:20220503T105500
+DTSTAMP:20220427T234338Z
+UID:SP22370064.1NBAY-6750-LEC-0011@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:NBAY 6750\, Lecture
+DTSTART;VALUE=DATE-TIME:20220503T112500
+DTEND;VALUE=DATE-TIME:20220503T124000
+DTSTAMP:20220427T234338Z
+UID:SP22370064.1NBAY-6750-LEC-0012@classes.cornell.edu
+DESCRIPTION:LEC 001
+LOCATION:Tata Innovation Center L23
+RELATED-TO:SP22370064.1NBAY-6750-LEC-0011@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:TECH 5910\, Studio
+DTSTART;VALUE=DATE-TIME:20220428T160000
+DTEND;VALUE=DATE-TIME:20220428T191500
+DTSTAMP:20220427T234338Z
+UID:SP22369191.1TECH-5910-STU-5302@classes.cornell.edu
+DESCRIPTION:STU 530
+LOCATION:Bloomberg Center 131
+RELATED-TO:SP22369191.1TECH-5910-STU-5301@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:TECH 5910\, Studio
+DTSTART;VALUE=DATE-TIME:20220503T160000
+DTEND;VALUE=DATE-TIME:20220503T191500
+DTSTAMP:20220427T234338Z
+UID:SP22369191.1TECH-5910-STU-5302@classes.cornell.edu
+DESCRIPTION:STU 530
+LOCATION:Bloomberg Center 131
+RELATED-TO:SP22369191.1TECH-5910-STU-5301@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:TECH 5910\, Studio
+DTSTART;VALUE=DATE-TIME:20220505T160000
+DTEND;VALUE=DATE-TIME:20220505T191500
+DTSTAMP:20220427T234338Z
+UID:SP22369191.1TECH-5910-STU-5302@classes.cornell.edu
+DESCRIPTION:STU 530
+LOCATION:Bloomberg Center 131
+RELATED-TO:SP22369191.1TECH-5910-STU-5301@classes.cornell.edu
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY;LANGUAGE=en-us:TECH 5910\, Studio
+DTSTART;VALUE=DATE-TIME:20220505T191600
+DTEND;VALUE=DATE-TIME:20220505T210000
+DTSTAMP:20220427T234338Z
+UID:SP22369191.1TECH-5910-STU-5308@classes.cornell.edu
+DESCRIPTION:STU 530
+LOCATION:Bloomberg Center 131
+RELATED-TO:SP22369191.1TECH-5910-STU-5301@classes.cornell.edu
+END:VEVENT
+END:VCALENDAR
