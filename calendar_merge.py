@@ -111,7 +111,6 @@ def make_recommendations (location):
     free_time_per_week = class_dur_ass['Time Per Week']
 
     def shift_calculator(dayofweek):
-
         # Filtering class dataframe to that day of week 
         if dayofweek not in list(classes['Day of Week'].unique()):
             shift_dict = {}
@@ -121,12 +120,12 @@ def make_recommendations (location):
         # Sort by the start 
         temp = temp.sort_values(by = 'Start').reset_index(drop = True)
 
-         # Check if there is a class at 8 AM, if not then start the schedule then
+        # Check if there is a class at 8 AM, if not then start the schedule then
         if temp.Start[0] != dt.datetime.combine(temp.End.iloc[0], dt.time(8, 00)):
             morning = dt.datetime.combine(temp.End.iloc[0], dt.time(8, 00))
             temp = temp.append({'Summary': '0', 'Type': '0', 'Start': morning, 'End': morning, 'Duration_Mins': 0, 'Day of Week': dayofweek}, ignore_index = True)
 
-  # Adding a schedule end time
+        # Adding a schedule end time
         evening = dt.datetime.combine(temp.End.iloc[0], dt.time(22, 00))
 
         # Adding in start and end times 
@@ -143,37 +142,44 @@ def make_recommendations (location):
             delta = list(b - a)
             for j in delta:
                 mins = round(j.total_seconds()/60)
-                if mins >= 20:
-                    for l in range(math.floor(mins/20)):
-                        shift_dict['shift' + str(i)] = {'Start': a.values[0], 'End': (a + timedelta(minutes = 20)).values[0] }
+            if mins >= 45:
+                for l in range(math.floor(mins/45)):
+                    shift_dict['shift' + str(i)] = {'Start': (a + timedelta(minutes = 5)).values[0], 'End': (a + timedelta(minutes = 50)).values[0] }
+
+
         return shift_dict
 
-
+    #Putting into a dictionary for all days of week
     master_shifts = {}
     for i in list(classes['Day of Week'].unique()):
         master_shifts[str(i)] = shift_calculator(i)
-    
-    print (master_shifts)
 
     for c in list(free_time_per_week.index):
         for h in range(int(free_time_per_week[c])):
-            # Pick a random day
-            day = random.choice(list(master_shifts.keys()))
+            # Stop assinging when there are no empty shifts left
+            if master_shifts == {}:
+                break
+            else:
+                # Pick a random day
+                day = random.choice(list(master_shifts.keys()))
 
-            # Picking random shift on that day
-            shift = random.choice(list(master_shifts[day].keys()))
+                # Picking random shift on that day
+                shift = random.choice(list(master_shifts[day].keys()))
 
-            # Getting the time in that block
-            block = master_shifts[day][shift]
-            
-            # Delete that shift from the dictionary so it can't be picked again
-            master_shifts[day].pop(shift)
+                # Getting the time in that block
+                block = master_shifts[day][shift]
+                
+                # Delete that shift from the dictionary so it can't be picked again
+                master_shifts[day].pop(shift)
 
-            if master_shifts[day] == {}:
-                master_shifts.pop(day)
+                if master_shifts[day] == {}:
+                    master_shifts.pop(day)
 
-            classes = classes.append({'Summary': 'Study for ' + c, 'Type': 'Block', 'Start': block['Start'], 'End': block['End'], 'Duration_Mins': 20, 'Day of Week': day}, ignore_index = True)
+                # Appending to the classes df
+                classes = classes.append({'Summary': 'Study for ' + c, 'Type': 'Block', 'Start': block['Start'], 'End': block['End'], 'Duration_Mins': 45, 'Day of Week': day}, ignore_index = True)
+
     results = classes.sort_values(by = 'Start').reset_index(drop = True)
+
     blocks = results[results.Type == 'Block']
     blocks = blocks.reset_index()
 
