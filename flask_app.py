@@ -38,7 +38,7 @@ def show_advanced_calendar():
     location = os.path.join(cwd, "Experiments/", folder_name)
     events = make_recommendations (location)
     print (events)
-    return render_template ("advanced_calendar.html", events=events)
+    return render_template ("advanced_calendar.html", events=events, folder_name=folder_name)
 
 @app.route("/download", methods=['GET'])
 def download_file():

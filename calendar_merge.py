@@ -183,6 +183,16 @@ def make_recommendations (location):
     blocks = results[results.Type == 'Block']
     blocks = blocks.reset_index()
 
+    rows = []
+    with open(location, 'r') as readFile:
+        reader = csv.reader(readFile)
+        for row in reader:
+            if row[1] != "Block":
+                rows.append(row)
+    with open(location, 'w') as writeFile:
+        writer = csv.writer(writeFile)
+        writer.writerows(rows)
+
     with open(location, 'a', newline='') as csvfile:
         schedulewriter = csv.writer(csvfile, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL)
         for index, row in blocks.iterrows():
