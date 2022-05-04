@@ -109,13 +109,15 @@ def make_recommendations (location):
     classes['End'] = classes['End'].map(to_dt)
     classes.sort_values(by = ['Day of Week', 'Start'])
     free_time_per_week = class_dur_ass['Time Per Week']
-
+    
     def shift_calculator(dayofweek):
-        # Filtering class dataframe to that day of week 
+  
         if dayofweek not in list(classes['Day of Week'].unique()):
             shift_dict = {}
-        
+  
         temp = classes[classes['Day of Week'] == dayofweek]
+
+        iter = len(temp)*3
 
         # Sort by the start 
         temp = temp.sort_values(by = 'Start').reset_index(drop = True)
@@ -136,16 +138,20 @@ def make_recommendations (location):
 
         # Computing the open shifts throughout the day
         shift_dict = {}
-        for i in range(0,len(temp)-1):
+        for i in range(0,iter):
             a = temp[temp.index == i].End.reset_index(drop = True)
             b = temp[temp.index == i + 1].Start.reset_index(drop = True)
+            #print(a, b)
             delta = list(b - a)
             for j in delta:
                 mins = round(j.total_seconds()/60)
             if mins >= 45:
-                for l in range(math.floor(mins/45)):
-                    shift_dict['shift' + str(i)] = {'Start': (a + timedelta(minutes = 5)).values[0], 'End': (a + timedelta(minutes = 50)).values[0] }
-
+                for l in range(math.floor(mins/55)):
+                    shift_dict['shift' + str(i + l)] = {'Start': (a + timedelta(minutes = (55*l))).values[0], 'End': (a + timedelta(minutes = 45 + (55*l))).values[0]}
+                    # Updating the temp df
+                    temp = temp.append({'Summary': '0', 'Type': '0', 'Start': (a + timedelta(minutes = 5 + (55*l))).values[0], 'End': (a + timedelta(minutes = 50 + (55*l))).values[0], 'Duration_Mins': 0, 'Day of Week': dayofweek}, ignore_index = True)
+                    # Sorting 
+                    temp = temp.sort_values(by = 'Start').reset_index(drop = True)
 
         return shift_dict
 
